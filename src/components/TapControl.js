@@ -68,22 +68,22 @@ class TapControl extends React.Component {
       currentlyVisibleState = <KegDetail 
         keg={this.state.selectedKeg}
         onClickingBuy={this.handleKegPurchase} />
-      buttonText = "return to tap list";
+      buttonText = "RETURN TO TAP LIST";
     } else if (this.state.formVisibleOnPage) {
       currentlyVisibleState = <NewKegForm 
         onNewKegCreation={this.handleAddingNewKegToList} />
-      buttonText = "return to tap list";
+      buttonText = "RETURN TO TAP LIST";
     } else {
       currentlyVisibleState = <TapList 
         tapList={this.state.masterKegList}
         onKegSelection={this.handleChangingSelectedKeg} />
-      buttonText = "add a keg";
+      buttonText = "ADD NEW KEG";
     }
 
     return(
       <React.Fragment>
         <div style={tapControlStyles}>
-          <button onClick={this.handleClick}>{buttonText}</button>
+          <button className="reused-button" onClick={this.handleClick}>{buttonText}</button>
           {currentlyVisibleState}
         </div>
       </React.Fragment>
