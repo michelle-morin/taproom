@@ -2,7 +2,7 @@
 
 #### React Fundamentals Independent Project for Epicodus, April 24, 2020
 
-#### By Michelle Morin
+#### By: Michelle Morin
 
 ## Description
 
