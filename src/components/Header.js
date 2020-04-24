@@ -2,23 +2,28 @@ import React from 'react';
 
 function Header(){
   const headerStyles = {
-    textAlign: 'center',
-    color:  '#f5f5f5',
-    backgroundColor: '#111111',
-    fontSize: '2rem',
+    marginLeft: '10vw',
+    marginRight: '10vw',
     position: 'fixed',
-    top: '0',
+    top: '5vh',
     left: '0',
-    width: '100vw',
-    height: '20vh',
+    width: '80vw',
+    height: '15vh',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    flexWrap: 'wrap',
+    borderTop: '3px solid #388087',
+    borderBottom: '3px solid #388087',
+    color:  'rgb(227, 138, 89)',
+    backgroundColor: 'transparent',
+    fontSize: '1.5rem'
   }
 
   return (
     <React.Fragment>
       <div style={headerStyles}>
-        <div className="header">
-          <h1>Michelle's Taproom</h1>
-        </div>
+        <h1>REACT TAPROOM</h1>
       </div>
     </React.Fragment>
   );
