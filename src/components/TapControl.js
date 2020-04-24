@@ -7,7 +7,8 @@ class TapControl extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      formVisibleOnPage: false
+      formVisibleOnPage: false,
+      masterKegList = []
     };
   }
 
@@ -21,10 +22,12 @@ class TapControl extends React.Component {
     let currentlyVisibleState = null;
     let buttonText = null;
     if(this.state.formVisibleOnPage) {
-      currentlyVisibleState = <NewKegForm />
+      currentlyVisibleState = <NewKegForm 
+        onNewKegCreation={this.handleAddingNewKegToList} />
       buttonText = "return to tap list";
     } else {
-      currentlyVisibleState = <TapList />
+      currentlyVisibleState = <TapList 
+        tapList={this.state.masterKegList} />
       buttonText = "add a keg";
     }
 
