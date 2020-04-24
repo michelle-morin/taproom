@@ -1,10 +1,15 @@
 import React from 'react';
-// import { v4 } from 'uuid';
+import { v4 } from 'uuid';
 
 function NewKegForm() {
+
+  function handleNewKegFormSubmission(event){
+    event.preventDefault();
+  }
+
   return (
     <React.Fragment>
-      <form>
+      <form onSubmit={handleNewKegFormSubmission}>
         <input
           type='text'
           name='name'
