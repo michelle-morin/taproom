@@ -47,9 +47,9 @@ class TapControl extends React.Component {
   }
 
   handleKegPurchase = (id) => {
-    const currentlySelectedKeg = this.state.masterKegList.filter(keg => keg.id === id)[0];
-    const newPintQuantity = currentlySelectedKeg.pintQuantity - 1;
-    const updatedKeg = {...currentlySelectedKeg, pintQuantity: newPintQuantity};
+    const kegToBePurchased = this.state.masterKegList.filter(keg => keg.id === id)[0];
+    const newPintQuantity = kegToBePurchased.pintQuantity - 1;
+    const updatedKeg = {...kegToBePurchased, pintQuantity: newPintQuantity};
     const previousKegList = this.state.masterKegList.filter(keg => keg.id !== id);
     this.setState({
       masterKegList: [...previousKegList, updatedKeg],

@@ -21,7 +21,7 @@ function KegDetail(props){
 
 KegDetail.propTypes = {
   keg: PropTypes.object,
-  onClickingBuy: PropTypes.func,
+  onClickingBuy: PropTypes.func
 }
 
 export default KegDetail;
