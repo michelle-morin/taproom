@@ -27,14 +27,14 @@ _This application, built using Create React App, is a taproom where a bar can tr
 
 ###### For macOS:
 _If Homebrew is not installed on your computer already, then install Homebrew by entering the following two commands in Terminal:_
-* $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-* $ echo 'export PATH=/usr/local/bin:$PATH' >> ~/.bash_profile
+* ``/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"``
+* ``echo 'export PATH=/usr/local/bin:$PATH' >> ~/.bash_profile``
 
 _Install Git with the following command:_
-* $ brew install git
+* ``brew install git``
 
 _Next, install Node.js by entering the following command in Terminal:_
-* $ brew install node
+* ``brew install node``
 
 ###### For Windows:
 _Please visit the [Node.js website](https://nodejs.org/en/download/) for installation instructions._
