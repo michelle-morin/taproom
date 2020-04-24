@@ -46,12 +46,25 @@ class TapControl extends React.Component {
     this.setState({selectedKeg: selectedKeg});
   }
 
+  handleKegPurchase = (id) => {
+    const currentlySelectedKeg = this.state.masterKegList.filter(keg => keg.id === id)[0];
+    const newPintQuantity = currentlySelectedKeg.pintQuantity - 1;
+    const updatedKeg = {...currentlySelectedKeg, pintQuantity: newPintQuantity};
+    const previousKegList = this.state.masterKegList.filter(keg => keg.id !== id);
+    this.setState({
+      masterKegList: [...previousKegList, updatedKeg],
+      selectedKeg: updatedKeg
+    });
+  }
+
   render(){
     let currentlyVisibleState = null;
     let buttonText = null;
+
     if (this.state.selectedKeg != null) {
       currentlyVisibleState = <KegDetail 
-        keg={this.state.selectedKeg} />
+        keg={this.state.selectedKeg}
+        onClickingBuy={this.handleKegPurchase} />
       buttonText = "return to tap list";
     } else if (this.state.formVisibleOnPage) {
       currentlyVisibleState = <NewKegForm 
