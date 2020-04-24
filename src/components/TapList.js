@@ -16,6 +16,7 @@ function TapList(props){
       <div style={tapListStyles}>
         {props.tapList.map((keg) =>
         <Keg 
+          whenBuyClicked = {props.onClickingBuy}
           whenKegClicked = {props.onKegSelection}
           name={keg.name}
           brewery={keg.brewery}
@@ -32,7 +33,8 @@ function TapList(props){
 
 TapList.propTypes = {
   tapList: PropTypes.array,
-  onKegSelection: PropTypes.func
+  onKegSelection: PropTypes.func,
+  onClickingBuy: PropTypes.func
 }
 
 export default TapList;

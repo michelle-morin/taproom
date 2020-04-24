@@ -56,7 +56,7 @@ class TapControl extends React.Component {
     const previousKegList = this.state.masterKegList.filter(keg => keg.id !== id);
     this.setState({
       masterKegList: [...previousKegList, updatedKeg],
-      selectedKeg: updatedKeg
+      selectedKeg: null
     });
   }
 
@@ -66,8 +66,7 @@ class TapControl extends React.Component {
 
     if (this.state.selectedKeg != null) {
       currentlyVisibleState = <KegDetail 
-        keg={this.state.selectedKeg}
-        onClickingBuy={this.handleKegPurchase} />
+        keg={this.state.selectedKeg} />
       buttonText = "RETURN TO TAP LIST";
     } else if (this.state.formVisibleOnPage) {
       currentlyVisibleState = <NewKegForm 
@@ -76,7 +75,8 @@ class TapControl extends React.Component {
     } else {
       currentlyVisibleState = <TapList 
         tapList={this.state.masterKegList}
-        onKegSelection={this.handleChangingSelectedKeg} />
+        onKegSelection={this.handleChangingSelectedKeg}
+        onClickingBuy={this.handleKegPurchase} />
       buttonText = "ADD NEW KEG";
     }
 
