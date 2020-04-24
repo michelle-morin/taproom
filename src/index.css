@@ -43,4 +43,22 @@ button.new-keg-button {
   font-size: 1.5rem;
   background-color: #388087;
   color: #f6f6f2;
+  outline: none;
+  box-shadow: none;
+  cursor: pointer;
+}
+
+button.buy-button {
+  display: block;
+  margin: auto auto;
+  width: auto;
+  padding-left: 2%;
+  padding-right: 2%;
+  height: 2.5rem;
+  font-size: 1.5rem;
+  background-color: #c2edce;
+  color: #388087;
+  outline: none;
+  box-shadow: none;
+  cursor: pointer;
 }
