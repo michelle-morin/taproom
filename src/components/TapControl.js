@@ -7,10 +7,6 @@ const tapControlStyles = {
   position: 'relative',
   top: '20vh',
   width: '80vw',
-  display: 'flex',
-  justifyContent: 'space-around',
-  alignItems: 'flex-start',
-  flexWrap: 'wrap',
   marginTop: '2vh',
   marginLeft: '10vw',
   marginRight: '10vw'
@@ -87,8 +83,8 @@ class TapControl extends React.Component {
     return(
       <React.Fragment>
         <div style={tapControlStyles}>
-          {currentlyVisibleState}
           <button onClick={this.handleClick}>{buttonText}</button>
+          {currentlyVisibleState}
         </div>
       </React.Fragment>
     );
