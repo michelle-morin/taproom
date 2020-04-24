@@ -44,6 +44,7 @@ _Enter the following commands in Terminal (macOS) or PowerShell (Windows):_
 * ``cd desktop``
 * ``git clone https://github.com/michelle-morin/taproom``
 * ``cd taproom``
+* ``npm install``
 
 _Confirm that you have navigated to the taproom directory (e.g., by entering the command_ ``pwd`` _in Terminal)._
 
