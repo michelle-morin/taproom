@@ -2,13 +2,19 @@ import React from 'react';
 import NewKegForm from './NewKegForm';
 import TapList from './TapList';
 
+const tapControlStyles = {
+  position: 'relative',
+  top: '20vh',
+  margin: '5%'
+}
+
 class TapControl extends React.Component {
 
   constructor(props) {
     super(props);
     this.state = {
       formVisibleOnPage: false,
-      masterKegList = []
+      masterKegList: []
     };
   }
 
@@ -41,8 +47,10 @@ class TapControl extends React.Component {
 
     return(
       <React.Fragment>
-        {currentlyVisibleState}
-        <button onClick={this.handleClick}>{buttonText}</button>
+        <div style={tapControlStyles}>
+          {currentlyVisibleState}
+          <button onClick={this.handleClick}>{buttonText}</button>
+        </div>
       </React.Fragment>
     );
   }

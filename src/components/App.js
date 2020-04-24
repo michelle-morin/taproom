@@ -1,6 +1,6 @@
 import React from 'react';
-import 'Header' from './Header.js';
-import 'TapControl' from './TapControl.js';
+import Header from './Header.js';
+import TapControl from './TapControl.js';
 
 function App() {
   return (
