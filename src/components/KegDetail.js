@@ -1,4 +1,5 @@
 import React from "react";
+import BeerImage from './BeerImage';
 import PropTypes from 'prop-types';
 
 function KegDetail(props){
@@ -16,6 +17,7 @@ function KegDetail(props){
         <p>{keg.alcoholContent} ABV</p>
         <p>${keg.price} /pint</p>
         <p>pints in keg: {keg.pintQuantity}</p>
+        <BeerImage />
       </div>
     </React.Fragment>
   );
