@@ -23,7 +23,7 @@ function Keg(props) {
       <div style={kegStyles} id={props.id}>
         <h2 className="beer-name">{props.name}</h2>
         <p>{props.brewery}</p>
-        <p>{props.alcoholContent} ABV</p>
+        <p>ABV: {props.alcoholContent}% | IBU: {props.ibu}</p>
         <p>${props.price} per pint</p>
         {inStock(props.pintQuantity)}
         <button className="details-button" onClick = {()=> props.whenKegClicked(props.id)}>DETAILS</button>
@@ -36,6 +36,7 @@ Keg.propTypes = {
   name: PropTypes.string,
   brewery: PropTypes.string,
   alcoholContent: PropTypes.number,
+  ibu: PropTypes.number,
   price: PropTypes.number,
   pintQuantity: PropTypes.number,
   id: PropTypes.string,

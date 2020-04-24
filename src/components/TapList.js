@@ -21,6 +21,7 @@ function TapList(props){
           name={keg.name}
           brewery={keg.brewery}
           alcoholContent={keg.alcoholContent}
+          ibu={keg.ibu}
           price={keg.price}
           pintQuantity={keg.pintQuantity}
           id={keg.id}

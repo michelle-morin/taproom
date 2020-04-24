@@ -6,7 +6,7 @@ function NewKegForm(props) {
 
   function handleNewKegFormSubmission(event){
     event.preventDefault();
-    props.onNewKegCreation({name: event.target.name.value, brewery: event.target.brewery.value, alcoholContent: event.target.alcoholContent.value, price: event.target.price.value, pintQuantity: 124, id: v4()});
+    props.onNewKegCreation({name: event.target.name.value, brewery: event.target.brewery.value, alcoholContent: event.target.alcoholContent.value, ibu: event.target.ibu.value, price: event.target.price.value, pintQuantity: 124, id: v4()});
   }
 
   const newKegFormStyles = {
@@ -33,6 +33,10 @@ function NewKegForm(props) {
             type='number'
             name='alcoholContent'
             placeholder='ABV' />
+          <input
+            type='number'
+            name='ibu'
+            placeholder='IBU' />
           <input
             type='number'
             name='price'

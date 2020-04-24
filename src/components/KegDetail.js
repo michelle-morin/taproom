@@ -19,9 +19,10 @@ function KegDetail(props){
   return (
     <React.Fragment>
       <div style={kegDetailStyles}>
-        <h1>{keg.name} | {keg.brewery}</h1>
-        <p>{keg.alcoholContent} ABV</p>
-        <p>${keg.price} /pint</p>
+        <h1>{keg.name}</h1>
+        <p>Brewed by: {keg.brewery}</p>
+        <p>ABV: {keg.alcoholContent}% | IBU: {keg.ibu}</p>
+        <p>${keg.price} per pint</p>
         <p>pints in keg: {keg.pintQuantity}</p>
         {isDeletable(keg.pintQuantity)}
         <BeerImage />
