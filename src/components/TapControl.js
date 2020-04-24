@@ -7,9 +7,11 @@ const tapControlStyles = {
   position: 'relative',
   top: '20vh',
   width: '80vw',
+  height: 'auto',
   marginTop: '2vh',
   marginLeft: '10vw',
-  marginRight: '10vw'
+  marginRight: '10vw',
+  marginBottom: '10%'
 }
 
 class TapControl extends React.Component {

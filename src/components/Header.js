@@ -2,30 +2,26 @@ import React from 'react';
 
 function Header(){
   const headerStyles = {
-    marginLeft: '10vw',
-    marginRight: '10vw',
     position: 'absolute',
-    top: '5vh',
+    top: '0',
     left: '0',
-    width: '80vw',
-    height: '15vh',
+    width: '100vw',
+    height: '20vh',
     display: 'flex',
-    justifyContent: 'center',
     alignItems: 'center',
+    justifyContent: 'center',
     flexWrap: 'wrap',
-    borderTop: '3px solid #388087',
     borderBottom: '3px solid #388087',
-    backgroundColor: '#f6f6f2',
-    color:  'rgb(227, 138, 89)',
-    fontSize: '1.5rem'
+    backgroundColor: 'rgb(198,229,214)',
+    color:  '#388087',
+    fontSize: '1.5rem',
+    backgroundPosition: 'center'
   }
 
   return (
     <React.Fragment>
       <div style={headerStyles}>
-        <header>
-          <h1>REACT TAPROOM</h1>
-        </header>
+        <h1>REACT TAPROOM</h1>
       </div>
     </React.Fragment>
   );

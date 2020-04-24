@@ -5,9 +5,10 @@ function Footer(){
     position: 'fixed',
     bottom: '0',
     left: '0',
-    width: '100%',
-    backgroundColor: '#388087',
-    color: '#f6f6f2',
+    width: '100vw',
+    backgroundColor: 'rgb(198,229,214)',
+    borderTop: '2px solid #388087',
+    color: '#388087',
     padding: '0.5%',
     paddingLeft: '2%'
   }

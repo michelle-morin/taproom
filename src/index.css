@@ -5,20 +5,28 @@ body {
   color: #388087;
 }
 
-h3.beer-name {
-  background-color: #c2edce;
+h2.beer-name {
+  color: rgb(86,74,64);
+  background-color: rgb(247,236,212);
+}
+
+.beer-image {
+  top: 5vh;
+  height: 150px;
+  width: 150px;
 }
 
 button.reused-button {
-  background-color: rgb(227, 138, 89);
-  color: #f6f6f2;
-  height: 5rem;
+  color: rgb(86,74,64);
+  background-color: rgb(247,236,212);
+  height: 3rem;
   width: auto;
   font-size: 1.5rem;
   padding: 1%;
   cursor: pointer;
   outline: none;
   box-shadow: none;
+  border: none;
 }
 
 input {
@@ -56,11 +64,17 @@ button.buy-button, button.details-button {
   min-height: 2.5rem;
   height: auto;
   font-size: 1.5rem;
-  background-color: #badfe7;
+  background-color: rgb(198,229,214);
   color: #388087;
   outline: none;
   box-shadow: none;
   cursor: pointer;
+}
+
+button.buy-button:hover, button.details-button:hover {
+  transform: scale(1.1);
+  background-color: #388087;
+  color: #f6f6f2;
 }
 
 p.empty-keg {
