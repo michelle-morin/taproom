@@ -1,4 +1,4 @@
-# _React Taproom_
+# React Taproom
 
 #### React Fundamentals Independent Project for Epicodus, April 24, 2020
 
@@ -8,7 +8,7 @@
 
 _This application, built using Create React App, is a taproom where a bar can track their beer inventory._
 
-## Specification user stories:
+### Specification user stories:
 
 * A user is able to see a list/menu of all available kegs. For each keg, the user is able to see its name, brewery, price, and alcohol content (ABV).
 * A user is able to submit a form to add a new keg to the list.
@@ -19,7 +19,7 @@ _This application, built using Create React App, is a taproom where a bar can tr
 * A keg is unable to be poured from (pint count decremented) when the keg is empty. Instead, a user is able to see a note that the keg is empty.
 * A user is able to delete a keg when it is empty (0 pints remaining).
 
-## Component Tree
+### Component Tree
 ![component tree](/ComponentTree.jpg)
 
 ## Setup/Installation Requirements
