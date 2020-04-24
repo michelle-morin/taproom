@@ -8,6 +8,8 @@
 
 _This application, built using Create React App, is a taproom where a bar can track their beer inventory._
 
+_Deployed on [GitHub Pages](https://michelle-morin.github.io/taproom/)_
+
 ### Specification user stories:
 
 * A user is able to see a list/menu of all available kegs. For each keg, the user is able to see its name, brewery, price, and alcohol content (ABV).
