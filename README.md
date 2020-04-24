@@ -1,68 +1,65 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# _Taproom_
 
-## Available Scripts
+#### _React fundamentals independent project for Epicodus_, _April 24, 2020_
 
-In the project directory, you can run:
+#### By _**Michelle Morin**_
 
-### `npm start`
+## Description
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+_This application is a taproom where a bar can track their kegs._
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Specification user stories:
 
-### `npm test`
+* A user is able to see a list/menu of all available kegs. For each keg, the user is able to see its name, brewery, price, and alcohol content.
+* A user is able to submit a form to add a new keg to the list.
+* A user is able to click on a keg to see its details page.
+* A user is able to see how many pints are remaining in a keg (a full keg is assumed to include 124 pints).
+* A user is able to click a "buy" button next to a keg whenever a pint is sold. This decreases the number of pints remaining by 1.
+* A keg is unable to be poured from (pint count decremented) when the keg is empty.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Component Tree
+![component tree](/ComponentTree.jpg)
 
-### `npm run build`
+## Setup/Installation Requirements
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### Node install
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+###### For macOS:
+_If Homebrew is not installed on your computer already, then install Homebrew by entering the following two commands in Terminal:_
+* $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+* $ echo 'export PATH=/usr/local/bin:$PATH' >> ~/.bash_profile
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+_Install Git with the following command:_
+* $ brew install git
 
-### `npm run eject`
+_Next, install Node.js by entering the following command in Terminal:_
+* $ brew install node
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+###### For Windows:
+_Please visit the [Node.js website](https://nodejs.org/en/download/) for installation instructions._
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Clone this repository
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+_Enter the following commands in Terminal (macOS) or PowerShell (Windows):_
+* ``cd desktop``
+* ``git clone https://github.com/michelle-morin/taproom``
+* ``cd taproom``
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+_Confirm that you have navigated to the taproom directory (e.g., by entering the command_ ``pwd`` _in Terminal)._
 
-## Learn More
+_To view/edit the source code of this application, open the contents of the taproom directory in a text editor or IDE of your choice (e.g., to open all contents of the directory in Visual Studio Code on macOS, enter the command_ ``code .`` _in Terminal)._
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Technologies Used
+* _Git_
+* _CSS_
+* _JavaScript_
+* _React_
+* _JSX_
+* _Webpack_
+* _npm_
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### License
 
-### Code Splitting
+*This webpage is licensed under the MIT license.*
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Copyright (c) 2020 **_Michelle Morin_**
