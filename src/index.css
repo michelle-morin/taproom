@@ -12,8 +12,8 @@ h2.beer-name {
 
 .beer-image {
   top: 5vh;
-  height: 150px;
-  width: 150px;
+  height: 200px;
+  width: 200px;
 }
 
 button.reused-button {
@@ -80,11 +80,31 @@ button.buy-button:hover, button.details-button:hover {
 }
 
 p.empty-keg {
-  color: rgb(227, 138, 89);
+  color: rgb(86,74,64);
   font-size: 1.5rem;
 }
 
 button.almost-gone {
-  background-color: rgb(227, 138, 89);
+  background-color: #388087;
   color: #f6f6f2;
+}
+
+button.almost-gone:hover {
+  background-color: #f6f6f2;
+  color: #388087;
+}
+
+button.delete-button {
+  display: block;
+  margin: auto auto;
+  margin-bottom: 2%;
+  width: auto;
+  min-height: 2.5rem;
+  height: auto;
+  font-size: 1.5rem;
+  background-color: rgb(198,229,214);
+  color: #388087;
+  outline: none;
+  box-shadow: none;
+  cursor: pointer;
 }
