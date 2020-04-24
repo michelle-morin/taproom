@@ -17,6 +17,7 @@ _This application, built using Create React App, is a taproom where a bar can tr
 * A user is able to click a "buy" button next to a keg whenever a pint is sold. This decreases the number of pints remaining by 1.
 * When there are between 0 and 10 pints remaining in a keg, a user is able to see that the keg is almost gone (indicated on the "buy" button).
 * A keg is unable to be poured from (pint count decremented) when the keg is empty. Instead, a user is able to see a note that the keg is empty.
+* A user is able to delete a keg when it is empty (0 pints remaining).
 
 ## Component Tree
 ![component tree](/ComponentTree.jpg)
