@@ -1,12 +1,12 @@
 # _React Taproom_
 
-#### _React fundamentals independent project for Epicodus_, _April 24, 2020_
+#### React Fundamentals Independent Project for Epicodus, April 24, 2020
 
-#### By _**Michelle Morin**_
+#### By Michelle Morin
 
 ## Description
 
-_This application, built using Create React App, is a taproom where a bar can track their kegs._
+_This application, built using Create React App, is a taproom where a bar can track their beer inventory._
 
 ## Specification user stories:
 
@@ -63,6 +63,6 @@ _To view/edit the source code of this application, open the contents of the tapr
 
 ### License
 
-*This webpage is licensed under the MIT license.*
+MIT license
 
-Copyright (c) 2020 **_Michelle Morin_**
+Copyright &copy; 2020 Michelle Morin
