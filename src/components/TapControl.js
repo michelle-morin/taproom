@@ -79,7 +79,7 @@ class TapControl extends React.Component {
         tapList={this.state.masterKegList}
         onKegSelection={this.handleChangingSelectedKeg}
         onClickingBuy={this.handleKegPurchase} />
-      buttonText = "ADD NEW KEG";
+      buttonText = "+ NEW KEG";
     }
 
     return(

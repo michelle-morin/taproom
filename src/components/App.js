@@ -4,11 +4,17 @@ import TapControl from './TapControl.js';
 import Footer from './Footer.js';
 
 function App() {
+  const appStyles = {
+    fontFamily: "'Montserrat', sans-serif"
+  }
+
   return (
     <React.Fragment>
-      <Header />
-      <TapControl />
-      <Footer />
+      <div style={appStyles}>
+        <Header />
+        <TapControl />
+        <Footer />
+      </div>
     </React.Fragment>
   );
 }

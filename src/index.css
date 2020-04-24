@@ -30,6 +30,7 @@ button.reused-button {
 }
 
 input {
+  font-family: 'Montserrat', sans-serif;
   display: block;
   margin: auto auto;
   height: 2.5rem;
@@ -38,6 +39,7 @@ input {
   background-color: transparent;
   border: 1px solid #388087;
   border-radius: 5%;
+  font-size: 1.5rem;
   padding: 1%;
   outline: none;
   box-shadow: none;
