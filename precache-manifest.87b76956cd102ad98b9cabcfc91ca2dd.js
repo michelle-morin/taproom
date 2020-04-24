@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4caf752dc2cf6f86315d0bf6c099297b",
+    "revision": "4b30fe67074aad231780922a3807e616",
     "url": "/taproom/index.html"
   },
   {
