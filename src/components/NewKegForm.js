@@ -24,23 +24,23 @@ function NewKegForm(props) {
           <input
             type='text'
             name='name'
-            placeholder='brew name' />
+            placeholder='brew name' required/>
           <input
             type='text'
             name='brewery'
-            placeholder='brewery name' />
+            placeholder='brewery name' required/>
           <input
             type='number'
             name='alcoholContent'
-            placeholder='ABV' />
+            placeholder='ABV' required/>
           <input
             type='number'
             name='ibu'
-            placeholder='IBU' />
+            placeholder='IBU' required/>
           <input
             type='number'
             name='price'
-            placeholder='price' />
+            placeholder='price' required/>
           <button className="new-keg-button" type="submit">ADD KEG</button>
         </form>
       </div>
