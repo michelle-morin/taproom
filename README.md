@@ -1,4 +1,4 @@
-# _Taproom_
+# _React Taproom_
 
 #### _React fundamentals independent project for Epicodus_, _April 24, 2020_
 
@@ -6,16 +6,17 @@
 
 ## Description
 
-_This application is a taproom where a bar can track their kegs._
+_This application, built using Create React App, is a taproom where a bar can track their kegs._
 
 ## Specification user stories:
 
-* A user is able to see a list/menu of all available kegs. For each keg, the user is able to see its name, brewery, price, and alcohol content.
+* A user is able to see a list/menu of all available kegs. For each keg, the user is able to see its name, brewery, price, and alcohol content (ABV).
 * A user is able to submit a form to add a new keg to the list.
 * A user is able to click on a keg to see its details page.
-* A user is able to see how many pints are remaining in a keg (a full keg is assumed to include 124 pints).
+* A user is able to see how many pints are remaining in a keg (a full keg is assumed to include 124 pints). The pint quantity remaining in a keg is displayed on that keg's detail page.
 * A user is able to click a "buy" button next to a keg whenever a pint is sold. This decreases the number of pints remaining by 1.
-* A keg is unable to be poured from (pint count decremented) when the keg is empty.
+* When there are between 0 and 10 pints remaining in a keg, a user is able to see that the keg is almost gone (indicated on the "buy" button).
+* A keg is unable to be poured from (pint count decremented) when the keg is empty. Instead, a user is able to see a note that the keg is empty.
 
 ## Component Tree
 ![component tree](/ComponentTree.jpg)
@@ -44,9 +45,11 @@ _Enter the following commands in Terminal (macOS) or PowerShell (Windows):_
 * ``cd desktop``
 * ``git clone https://github.com/michelle-morin/taproom``
 * ``cd taproom``
-* ``npm install``
 
 _Confirm that you have navigated to the taproom directory (e.g., by entering the command_ ``pwd`` _in Terminal)._
+_Next, install npm at the project's root directory by entering the following commands in Terminal (macOS) or PowerShell (Windows):_
+* ``npm install``
+* ``npm start``
 
 _To view/edit the source code of this application, open the contents of the taproom directory in a text editor or IDE of your choice (e.g., to open all contents of the directory in Visual Studio Code on macOS, enter the command_ ``code .`` _in Terminal)._
 
@@ -55,7 +58,6 @@ _To view/edit the source code of this application, open the contents of the tapr
 * _CSS_
 * _JavaScript_
 * _React_
-* _JSX_
 * _Webpack_
 * _npm_
 
