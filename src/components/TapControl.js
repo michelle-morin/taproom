@@ -6,7 +6,14 @@ import KegDetail from './KegDetail';
 const tapControlStyles = {
   position: 'relative',
   top: '20vh',
-  margin: '5%'
+  width: '80vw',
+  display: 'flex',
+  justifyContent: 'space-around',
+  alignItems: 'flex-start',
+  flexWrap: 'wrap',
+  marginTop: '2vh',
+  marginLeft: '10vw',
+  marginRight: '10vw'
 }
 
 class TapControl extends React.Component {
