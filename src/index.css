@@ -48,17 +48,27 @@ button.new-keg-button {
   cursor: pointer;
 }
 
-button.buy-button {
+button.buy-button, button.details-button {
   display: block;
   margin: auto auto;
-  width: auto;
-  padding-left: 2%;
-  padding-right: 2%;
-  height: 2.5rem;
+  margin-bottom: 2%;
+  width: 80%;
+  min-height: 2.5rem;
+  height: auto;
   font-size: 1.5rem;
-  background-color: #c2edce;
+  background-color: #badfe7;
   color: #388087;
   outline: none;
   box-shadow: none;
   cursor: pointer;
+}
+
+p.empty-keg {
+  color: rgb(227, 138, 89);
+  font-size: 1.5rem;
+}
+
+button.almost-gone {
+  background-color: rgb(227, 138, 89);
+  color: #f6f6f2;
 }
