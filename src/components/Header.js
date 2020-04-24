@@ -14,14 +14,14 @@ function Header(){
     borderBottom: '3px solid #388087',
     backgroundColor: 'rgb(198,229,214)',
     color:  '#388087',
-    fontSize: '1.5rem',
-    backgroundPosition: 'center'
+    fontSize: '2rem',
+    fontFamily: "'Oswald', sans-serif"
   }
 
   return (
     <React.Fragment>
       <div style={headerStyles}>
-        <h1>REACT TAPROOM</h1>
+        <h1>REACT ON TAP</h1>
       </div>
     </React.Fragment>
   );
