@@ -1,6 +1,7 @@
 import React from 'react';
 import NewKegForm from './NewKegForm';
 import TapList from './TapList';
+import KegDetail from './KegDetail';
 
 const tapControlStyles = {
   position: 'relative',
@@ -14,7 +15,8 @@ class TapControl extends React.Component {
     super(props);
     this.state = {
       formVisibleOnPage: false,
-      masterKegList: []
+      masterKegList: [],
+      selectedKeg: null
     };
   }
 
@@ -32,16 +34,26 @@ class TapControl extends React.Component {
     });
   }
 
+  handleChangingSelectedKeg = (id) => {
+    const selectedKeg = this.state.masterKegList.filter(keg => keg.id === id)[0];
+    this.setState({selectedKeg: selectedKeg});
+  }
+
   render(){
     let currentlyVisibleState = null;
     let buttonText = null;
-    if(this.state.formVisibleOnPage) {
+    if (this.state.selectedKeg != null) {
+      currentlyVisibleState = <KegDetail 
+        keg={this.state.selectedKeg} />
+      buttonText = "return to tap list";
+    } else if (this.state.formVisibleOnPage) {
       currentlyVisibleState = <NewKegForm 
         onNewKegCreation={this.handleAddingNewKegToList} />
       buttonText = "return to tap list";
     } else {
       currentlyVisibleState = <TapList 
-        tapList={this.state.masterKegList} />
+        tapList={this.state.masterKegList}
+        onKegSelection={this.handleChangingSelectedKeg} />
       buttonText = "add a keg";
     }
 
