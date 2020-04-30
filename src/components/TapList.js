@@ -12,23 +12,21 @@ function TapList(props){
   }
 
   return(
-    <React.Fragment>
-      <div style={tapListStyles}>
-        {props.tapList.map((keg) =>
-        <Keg 
-          whenBuyClicked = {props.onClickingBuy}
-          whenKegClicked = {props.onKegSelection}
-          name={keg.name}
-          brewery={keg.brewery}
-          alcoholContent={keg.alcoholContent}
-          ibu={keg.ibu}
-          price={keg.price}
-          pintQuantity={keg.pintQuantity}
-          id={keg.id}
-          key={keg.id} />
-        )}
-      </div>
-    </React.Fragment>
+    <div style={tapListStyles}>
+      {props.tapList.map((keg) =>
+      <Keg 
+        whenBuyClicked = {props.onClickingBuy}
+        whenKegClicked = {props.onKegSelection}
+        name={keg.name}
+        brewery={keg.brewery}
+        alcoholContent={keg.alcoholContent}
+        ibu={keg.ibu}
+        price={keg.price}
+        pintQuantity={keg.pintQuantity}
+        id={keg.id}
+        key={keg.id} />
+      )}
+    </div>
   );
 }
 

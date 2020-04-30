@@ -19,11 +19,9 @@ function Header(){
   }
 
   return (
-    <React.Fragment>
-      <div style={headerStyles}>
-        <h1>REACT ON TAP</h1>
-      </div>
-    </React.Fragment>
+    <div style={headerStyles}>
+      <h1>REACT ON TAP</h1>
+    </div>
   );
 }
 

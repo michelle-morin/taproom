@@ -19,16 +19,14 @@ function Keg(props) {
   };
 
   return(
-    <React.Fragment>
-      <div style={kegStyles} id={props.id}>
-        <h2 className="beer-name">{props.name}</h2>
-        <p>{props.brewery}</p>
-        <p>ABV: {props.alcoholContent}% | IBU: {props.ibu}</p>
-        <p>${props.price} per pint</p>
-        {inStock(props.pintQuantity)}
-        <button className="details-button" onClick = {()=> props.whenKegClicked(props.id)}>DETAILS</button>
-      </div>
-    </React.Fragment>
+    <div style={kegStyles} id={props.id}>
+      <h2 className="beer-name">{props.name}</h2>
+      <p>{props.brewery}</p>
+      <p>ABV: {props.alcoholContent}% | IBU: {props.ibu}</p>
+      <p>${props.price} per pint</p>
+      {inStock(props.pintQuantity)}
+      <button className="details-button" onClick = {()=> props.whenKegClicked(props.id)}>DETAILS</button>
+    </div>
   );
 }
 

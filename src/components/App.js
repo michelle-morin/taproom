@@ -9,13 +9,11 @@ function App() {
   }
 
   return (
-    <React.Fragment>
-      <div style={appStyles}>
-        <Header />
-        <TapControl />
-        <Footer />
-      </div>
-    </React.Fragment>
+    <div style={appStyles}>
+      <Header />
+      <TapControl />
+      <Footer />
+    </div>
   );
 }
 

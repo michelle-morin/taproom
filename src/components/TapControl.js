@@ -92,12 +92,10 @@ class TapControl extends React.Component {
     }
 
     return(
-      <React.Fragment>
-        <div style={tapControlStyles}>
-          <button className="reused-button" onClick={this.handleClick}>{buttonText}</button>
-          {currentlyVisibleState}
-        </div>
-      </React.Fragment>
+      <div style={tapControlStyles}>
+        <button className="reused-button" onClick={this.handleClick}>{buttonText}</button>
+        {currentlyVisibleState}
+      </div>
     );
   }
 }

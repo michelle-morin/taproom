@@ -17,17 +17,15 @@ function KegDetail(props){
   };
 
   return (
-    <React.Fragment>
-      <div style={kegDetailStyles}>
-        <h1>{keg.name}</h1>
-        <p>Brewed by: {keg.brewery}</p>
-        <p>ABV: {keg.alcoholContent}% | IBU: {keg.ibu}</p>
-        <p>${keg.price} per pint</p>
-        <p>pints in keg: {keg.pintQuantity}</p>
-        {isDeletable(keg.pintQuantity)}
-        <BeerImage />
-      </div>
-    </React.Fragment>
+    <div style={kegDetailStyles}>
+      <h1>{keg.name}</h1>
+      <p>Brewed by: {keg.brewery}</p>
+      <p>ABV: {keg.alcoholContent}% | IBU: {keg.ibu}</p>
+      <p>${keg.price} per pint</p>
+      <p>pints in keg: {keg.pintQuantity}</p>
+      {isDeletable(keg.pintQuantity)}
+      <BeerImage />
+    </div>
   );
 }
 
