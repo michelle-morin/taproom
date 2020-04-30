@@ -6,7 +6,7 @@ function NewKegForm(props) {
 
   function handleNewKegFormSubmission(event){
     event.preventDefault();
-    props.onNewKegCreation({name: event.target.name.value, brewery: event.target.brewery.value, alcoholContent: event.target.alcoholContent.value, ibu: event.target.ibu.value, price: event.target.price.value, pintQuantity: 124, id: v4()});
+    props.onNewKegCreation({name: event.target.name.value, brewery: event.target.brewery.value, alcoholContent: parseInt(event.target.alcoholContent.value), ibu: parseInt(event.target.ibu.value), price: parseInt(event.target.price.value), pintQuantity: 124, id: v4()});
   }
 
   const newKegFormStyles = {
@@ -18,33 +18,31 @@ function NewKegForm(props) {
   }
 
   return (
-    <React.Fragment>
-      <div style={newKegFormStyles}>
-        <form onSubmit={handleNewKegFormSubmission}>
-          <input
-            type='text'
-            name='name'
-            placeholder='brew name' required/>
-          <input
-            type='text'
-            name='brewery'
-            placeholder='brewery name' required/>
-          <input
-            type='number'
-            name='alcoholContent'
-            placeholder='ABV' required/>
-          <input
-            type='number'
-            name='ibu'
-            placeholder='IBU' required/>
-          <input
-            type='number'
-            name='price'
-            placeholder='price' required/>
-          <button className="new-keg-button" type="submit">ADD KEG</button>
-        </form>
-      </div>
-    </React.Fragment>
+    <div style={newKegFormStyles}>
+      <form onSubmit={handleNewKegFormSubmission}>
+        <input
+          type='text'
+          name='name'
+          placeholder='brew name' required/>
+        <input
+          type='text'
+          name='brewery'
+          placeholder='brewery name' required/>
+        <input
+          type='number'
+          name='alcoholContent'
+          placeholder='ABV' required/>
+        <input
+          type='number'
+          name='ibu'
+          placeholder='IBU' required/>
+        <input
+          type='number'
+          name='price'
+          placeholder='price' required/>
+        <button className="new-keg-button" type="submit">ADD KEG</button>
+      </form>
+    </div>
   );
 }
 
